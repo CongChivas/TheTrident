@@ -1,0 +1,130 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+header {
+  background: #1abc9c;
+  color: white;
+  padding: 15px 20px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.show-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+.show-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+}
+
+.show-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.show-card button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.show-card button:first-of-type {
+  background-color: #2ecc71;
+}
+
+.show-card button:last-of-type {
+  background-color: #3498db;
+}
+
+.booking {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background: white;
+}
+
+.booking-poster img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.booking-form {
+  max-width: 400px;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form input,
+.booking-form button {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.booking-form button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.actor-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.actor img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.actor p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none;
+}
