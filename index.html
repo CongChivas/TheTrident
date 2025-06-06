@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Trident Theatre</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo-box">
+      <img src="https://i.imgur.com/oKHlJwA.png" alt="Logo" class="logo" />
+      <h1>The Trident Theatre</h1>
+    </div>
+    <nav>
+      <a href="#about">Giới thiệu về chúng tôi</a>
+      <a href="#shows">Các suất diễn</a>
+      <a href="#">Các suất chuẩn bị ra mắt</a>
+      <a href="#contact">Liên hệ với chúng tôi</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SHOW LIST -->
+    <section id="shows" class="show-list">
+      <div class="show-card">
+        <img src="https://i.imgur.com/XU55nAT.jpg" alt="Nàng Tiên Cá" />
+        <h2>Nàng Tiên Cá: Trái Tim Đại Dương</h2>
+        <button onclick="openBooking('Nàng Tiên Cá', 'https://i.imgur.com/XU55nAT.jpg')">Đặt Suất</button>
+        <button>Đặt chỗ</button>
+      </div>
+
+      <div class="show-card">
+        <img src="https://i.imgur.com/bjRxpO4.jpg" alt="Quasimodo" />
+        <h2>Quasimodo: Thằng Gù Nhà Thờ Đức Bà</h2>
+        <button onclick="openBooking('Quasimodo', 'https://i.imgur.com/bjRxpO4.jpg')">Đặt Suất</button>
+        <button>Đặt chỗ</button>
+      </div>
+
+      <div class="show-card">
+        <img src="https://i.imgur.com/NJjSpTa.jpg" alt="The Fate" />
+        <h2>The Fate</h2>
+        <button onclick="openBooking('The Fate', 'https://i.imgur.com/NJjSpTa.jpg')">Đặt Suất</button>
+        <button>Đặt chỗ</button>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section id="booking" class="booking hidden">
+      <div class="booking-poster">
+        <img id="poster-img" src="" alt="Poster">
+      </div>
+      <div class="booking-form">
+        <h3 id="show-title">Đặt suất</h3>
+        <form onsubmit="submitForm(event)">
+          <label>Email của bạn:</label>
+          <input type="email" required />
+          <label>Họ và tên của bạn:</label>
+          <input type="text" required />
+          <label>Số điện thoại liên hệ:</label>
+          <input type="tel" required />
+          <label>Chọn ngày đặt:</label>
+          <input type="date" id="date-input" required />
+          <button type="submit">Xác nhận đặt suất</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>Chúng tôi là nhóm nghệ sĩ trẻ yêu thích nhạc kịch</h2>
+      <div class="actor-list">
+        <div class="actor">
+          <img src="https://i.imgur.com/FxEe5dP.jpg" alt="Minh Phùng" />
+          <p>Minh Phùng</p>
+        </div>
+        <div class="actor">
+          <img src="https://i.imgur.com/p5b13aJ.jpg" alt="Gia Thuỵ" />
+          <p>Gia Thuỵ</p>
+        </div>
+        <div class="actor">
+          <img src="https://i.imgur.com/L17GqRj.jpg" alt="Thái Hoà Apero" />
+          <p>Thái Hoà Apero</p>
+        </div>
+        <div class="actor">
+          <img src="https://i.imgur.com/T4EFw7T.jpg" alt="Thư Ngô" />
+          <p>Thư Ngô</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Liên hệ với chúng tôi</h2>
+      <p>Email: contact@thetrident.vn</p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
