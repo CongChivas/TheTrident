@@ -9,23 +9,62 @@
 <body>
 
   <header>
-    <div class="logo-box">
+    <div class="center-logo">
       <img src="https://github.com/CongChivas/TheTrident/raw/main/496008360_665523166270873_7990596994836529342_n.jpg" class="logo" />
       <h1>The Trident Theatre</h1>
     </div>
     <nav>
-      <a href="#about">Giới thiệu về chúng tôi</a>
+      <a href="#intro">Giới thiệu</a>
+      <a href="#actors">Diễn viên</a>
       <a href="#shows">Các suất diễn</a>
-      <a href="#">Vở Chuẩn Bị Ra Mắt</a>
-      <a href="#contact">Liên hệ với chúng tôi</a>
+      <a href="#coming">Vở Chuẩn Bị Ra Mắt</a>
+      <a href="#contact">Liên hệ</a>
     </nav>
   </header>
 
   <main>
+
+    <!-- INTRO SECTION -->
+    <section id="intro" class="intro-section">
+      <div class="intro-text">
+        <h2>Chúng tôi là nhóm nghệ sĩ trẻ có đam mê với bộ môn nhạc kịch</h2>
+      </div>
+      <div class="intro-image">
+        <img src="https://github.com/CongChivas/TheTrident/raw/main/496008360_665523166270873_7990596994836529342_n.jpg" alt="The Trident Logo" />
+      </div>
+    </section>
+
+    <!-- ACTOR SECTION -->
+    <section id="actors">
+      <h2>Diễn viên của chúng tôi</h2>
+      <div class="actor-list">
+        <div class="actor">
+          <img src="https://github.com/CongChivas/TheTrident/raw/main/BACKGROUND%20(4).png" alt="Minh Phùng"/>
+          <p>Minh Phùng</p>
+        </div>
+        <div class="actor">
+          <img src="https://github.com/CongChivas/TheTrident/raw/main/489011934_1296114428142052_1286331211511610899_n.jpg" alt="Trần Quỳnh Anh"/>
+          <p>Trần Quỳnh Anh</p>
+        </div>   
+        <div class="actor">
+          <img src="https://github.com/CongChivas/TheTrident/raw/main/BACKGROUND%20(3).png" alt="Gia Thuỵ"/>
+          <p>Gia Thuỵ</p>
+        </div>
+        <div class="actor">
+          <img src="https://github.com/CongChivas/TheTrident/raw/main/BACKGROUND.png" alt="Thái Hoà Apero"/>
+          <p>Thái Hoà Apero</p>
+        </div>
+        <div class="actor">
+          <img src="https://github.com/CongChivas/TheTrident/raw/main/BACKGROUND%20(2).png" alt="Thư Ngô"/>
+          <p>Thư Ngô</p>
+        </div>
+      </div>
+    </section>
+
     <!-- SHOW LIST -->
     <section id="shows" class="show-list">
       <div class="show-card">
-        <img src="https://github.com/CongChivas/TheTrident/raw/main/UP%20FACEBOOK.png" class="Nàng Tiên Cá" />
+        <img src="https://github.com/CongChivas/TheTrident/raw/main/UP%20FACEBOOK.png" alt="Nàng Tiên Cá"/>
         <h2>Nàng Tiên Cá: Trái Tim Đại Dương</h2>
         <button onclick="openBooking('Nàng Tiên Cá', 'https://github.com/CongChivas/TheTrident/raw/main/UP%20FACEBOOK.png')">Đặt Suất</button>
         <button>Đặt chỗ</button>
@@ -46,6 +85,22 @@
       </div>
     </section>
 
+    <!-- COMING SOON -->
+    <section id="coming" class="show-list">
+      <div class="show-card">
+        <img src="https://via.placeholder.com/300x200?text=Coming+Soon" alt="Coming Soon 1" />
+        <h2>Coming Soon</h2>
+      </div>
+      <div class="show-card">
+        <img src="https://via.placeholder.com/300x200?text=Coming+Soon" alt="Coming Soon 2" />
+        <h2>Coming Soon</h2>
+      </div>
+      <div class="show-card">
+        <img src="https://via.placeholder.com/300x200?text=Coming+Soon" alt="Coming Soon 3" />
+        <h2>Coming Soon</h2>
+      </div>
+    </section>
+
     <!-- BOOKING FORM -->
     <section id="booking" class="booking hidden">
       <div class="booking-poster">
@@ -61,38 +116,11 @@
           <label>Số điện thoại liên hệ:</label>
           <input type="tel" required />
           <label>Chọn tháng đặt:</label>
-          <input type="date" id="date-input" required /
+          <input type="date" id="date-input" required />
           <label>Số lượng suất bạn muốn đặt:</label>
           <input type="text" required />
           <button type="submit">Xác nhận đặt suất</button>
         </form>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>Chúng tôi là nhóm nghệ sĩ trẻ yêu thích nhạc kịch</h2>
-      <div class="actor-list">
-        <div class="actor">
-          <img src="https://github.com/CongChivas/TheTrident/raw/main/BACKGROUND%20(4).png" class="Minh Phùng" />
-          <p>Minh Phùng</p>
-        </div>
-         <div class="actor">
-          <img src="https://github.com/CongChivas/TheTrident/raw/main/489011934_1296114428142052_1286331211511610899_n.jpg" class="Trần Quỳnh Anh" />
-          <p>Trần Quỳnh Anh</p>
-        </div>   
-        <div class="actor">
-          <img src="https://github.com/CongChivas/TheTrident/raw/main/BACKGROUND%20(3).png" class="Gia Thuỵ" />
-          <p>Gia Thuỵ</p>
-        </div>
-        <div class="actor">
-          <img src="https://github.com/CongChivas/TheTrident/raw/main/BACKGROUND.png" class="Thái Hoà Apero" />
-          <p>Thái Hoà Apero</p>
-        </div>
-        <div class="actor">
-         <img src="https://github.com/CongChivas/TheTrident/raw/main/BACKGROUND%20(2).png" class="Thư Ngô" />
-          <p>Thư Ngô</p>
-        </div>
       </div>
     </section>
 
@@ -107,4 +135,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
